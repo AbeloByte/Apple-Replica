@@ -1,0 +1,59 @@
+/* VideoGallery.css */
+.video-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 2fr));
+    gap: 20px;
+    padding: 20px;
+    background: linear-gradient(135deg, #1a1a1a, #333);
+  }
+  
+  .video-card {
+    background: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .video-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.7);
+  }
+  
+  .video-thumbnail img {
+    width: 100%;
+    border-bottom: 3px solid black; /* Red bar to mimic YouTube style */
+  }
+  
+  .video-info {
+    padding: 15px;
+    color: black;
+  }
+  
+  .video-info h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+  
+  .video-info p {
+    padding-top: 10px;
+    font-size: 0.9rem;
+    color:black;
+
+  }
+  
+
+  .detailHeading{
+    font-size: 36px;
+    text-align: center;
+  }
+
+  .detailHeading h1{
+    font-weight: bold;
+    padding-bottom: 20px;
+  }
+
+.detaildescription{
+  font-weight: bold;
+
+}

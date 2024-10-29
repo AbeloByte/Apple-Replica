@@ -1,0 +1,93 @@
+src/components/ProductDisplay.css
+.product-container {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+  }
+  
+  .product-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-around; /* Distribute space around the items */
+    border: 1px solid #eaeaea;
+    padding: 40px; /* Increase padding for a more spacious feel */
+    border-radius: 15px; /* Rounded corners */
+    margin: 0; /* Remove margin to ensure full-screen sections */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Deeper shadow for more depth */
+    width: 100%;
+    box-sizing: border-box;
+    min-height: 100vh; /* Ensure each section fills the viewport height */
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .product-card:nth-child(even) {
+    flex-direction: row-reverse; /* Reverse the direction for even-indexed items */
+  }
+  
+  .product-image {
+    width: 50%; /* Larger image width */
+    max-width: 500px; /* Optional: limit maximum size */
+    height: auto;
+    border-radius: 15px; /* Match border-radius of the card */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for image */
+  }
+  
+  .product-content {
+    width: 40%; /* Adjust to fit the larger image */
+    padding-left: 30px; /* Increase padding for better spacing */
+  }
+  
+  .product-card:nth-child(even) .product-content {
+    padding-left: 0;
+    padding-right: 30px; /* Add padding to the right when reversed */
+  }
+  
+  h2 {
+    font-size: 32px; /* Larger font size for the title */
+    font-weight: 700; /* Bold font weight */
+    margin-bottom: 15px; /* Increased margin for better spacing */
+    color: #333; /* Darker text color for better readability */
+  }
+  
+  p {
+    font-size: 18px; /* Larger font size for paragraphs */
+    line-height: 1.6; /* Increased line height for readability */
+    margin-bottom: 15px; /* Increased margin for spacing */
+    color: #555; /* Slightly lighter text color for a softer look */
+  }
+  
+  a {
+    color: #007bff; /* Brighter color for links */
+    text-decoration: none;
+    font-weight: 600; /* Slightly bold font weight */
+    font-size: 18px; /* Larger font size for links */
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Optional: Responsive design for better mobile view */
+  @media (max-width: 768px) {
+    .product-card {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .product-content {
+      width: 100%;
+      padding-left: 0;
+      padding-right: 0;
+      margin-top: 20px;
+    }
+  
+    .product-image {
+      width: 100%;
+      max-width: none;
+      margin-bottom: 20px;
+    }
+  }
+  
